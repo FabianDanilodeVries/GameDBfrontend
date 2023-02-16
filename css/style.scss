@@ -1,0 +1,93 @@
+//Global styles
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(19, 16, 22);
+  }
+
+  //Background image and covers
+  #background {
+    width: 100%;
+    height: 90vh;
+    background-image: url("assets/design_background.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 60px;
+    z-index: -100;
+  }
+
+  //Background colored
+  /*
+  #image_cover {
+    width: 100%;
+    height: 90vh;
+    //background: linear-gradient(to top, rgb(14, 16, 17), rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0));
+    background: linear-gradient(30deg, rgb(68, 37, 153, 0.9), rgba(122, 58, 175, 0.5), rgba(88, 34, 3, 0.9));
+    position: relative;
+    z-index: -90;
+  }
+
+  #image_cover2 {
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(to top, rgba(19, 16, 22) 10%, rgba(19, 16, 22, 0.8) 40%, rgba(20, 20, 20, 0.5) 60%, rgba(20, 20, 20, 0));
+    position: relative;
+    z-index: -80;
+  }
+  */
+
+  //Background black gradient only
+  #image_cover2 {
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(to top, rgba(19, 16, 22) 10%, rgba(19, 16, 22, 0.8) 40%, rgba(20, 20, 20, 0.7) 60%, rgba(20, 20, 20, 0.5));
+    position: relative;
+    z-index: -80;
+  }
+
+
+  //Header
+  .header {
+    font-weight: bold;
+    font-size: 1.6em;
+    text-transform: uppercase;
+  }
+
+
+  //Content
+  @media screen and (min-width: 1700px){
+    #content {
+      width: 1680px;
+      margin: auto;
+    }
+  }
+  @media screen and (max-width: 1699px){
+    #content {
+      width: 90%;
+      margin: auto;
+    }
+  }
+  
+
+
+
+
+  //Placeholder addgame inputs
+  #addGameButton {
+    display: block;
+    margin-top: 10px;
+    height: 40px;
+    width: 120px;
+    font-weight: bold;
+  }
