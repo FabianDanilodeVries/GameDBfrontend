@@ -19,10 +19,11 @@ function generateGames(json){
     } else {
         let content = "";
         json.forEach(element => {
+            console.log(element);
             //Foreach element create a div
             let divElement = `     
             <div class="topGames_item">
-                <img src="dist/assets/minecraft_cover.jpg"></img>
+                <img src=data:image/png;base64,`+element.base64String+`></img>
                 <span>
                     <a class="fa fa-star checked"></a><a id="rating">8.1</a>
                     <p class="topGames_item_name">`+element.name+`</p>
