@@ -68,7 +68,7 @@ html {
   //Content
   @media screen and (min-width: 1700px){
     #content {
-      width: 1680px;
+      width: 1200px;
       margin: auto;
     }
   }
@@ -84,10 +84,11 @@ html {
 
 
   //Placeholder addgame inputs
-  #addGameButton {
+  .addButton {
     display: block;
     margin-top: 10px;
     height: 40px;
     width: 120px;
     font-weight: bold;
+    margin-bottom: 10px;
   }

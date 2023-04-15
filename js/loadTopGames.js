@@ -19,7 +19,6 @@ function generateGames(json){
     } else {
         let content = "";
         json.forEach(element => {
-            console.log(element);
             //Foreach element create a div
             let divElement = `     
             <div class="topGames_item">
@@ -27,7 +26,7 @@ function generateGames(json){
                 <span>
                     <a class="fa fa-star checked"></a><a id="rating">8.1</a>
                     <p class="topGames_item_name">`+element.name+`</p>
-                    <p class="topGames_item_description"><b>Genre: </b>`+element.genre+`</p>
+                    <p class="topGames_item_genre"><b>Genre: </b>`+element.genre+`</p>
                     <a id=`+element.id+`"></a>
                 </span>
             </div>

@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/loadTopGames.js" defer></script>
+    <script src="js/loadNews.js" defer></script>
     <script src="js/addGame.js" defer></script>
+    <script src="js/addNews.js" defer></script>
     <link rel="stylesheet" type="text/css" href="dist/style.css">
     <link rel="stylesheet" type="text/css" href="dist/topGames.css">
     <link rel="stylesheet" type="text/css" href="dist/nav.css">
@@ -27,16 +29,12 @@
         <!-- news segment -->
         <div id="newsContainer">
             <p class="header">Latest gaming news</p>
-            <div id="news">
-                <div class="news_grid_container">
-                    <div id="news_item_big" class="news_item">1</div>
-                    <div id="news_item_small" class="news_item">2</div>
-                    <div id="news_item_small" class="news_item">3</div>  
-                    <div id="news_item_small" class="news_item">4</div>
-                    <div id="news_item_small" class="news_item">5</div>
-                    <div id="news_item_small" class="news_item">6</div>
-                  </div>
-            </div>
+            <!-- <input id="inputTitle" placeholder="Title" type="text">
+            <input id="inputExcerpt" placeholder="Excerpt" type="text">
+            <input id="inputBody" placeholder="Body" type="text">
+            <input id="inputNewsImage" placeholder="Image" type="file">
+            <button id="addNewsButton" class="addButton">Add News</button> -->
+            <div id="news" class="news_grid_container"></div>
         </div>
 
         <!-- top games -->
@@ -49,7 +47,7 @@
             <input id="inputReleaseDate" placeholder="Release date" type="date">
             <input id="inputRuntime" placeholder="Expected runtime" type="number">
             <input id="inputImage" placeholder="Image" type="file">
-            <button id="addGameButton">Add Game</button>
+            <button id="addGameButton" class="addButton">Add Game</button>
             <div id="topGames">
             </div>
         </div>
